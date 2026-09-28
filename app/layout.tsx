@@ -4,6 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Risk Graph",
   description: "Open-source security graph connecting assets, identities, permissions, vulnerabilities, and exposures.",
+  icons: {
+    icon: '/icons/app/icon.svg',
+    shortcut: '/icons/app/favicon.png',
+    apple: '/icons/app/icon.svg',
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
