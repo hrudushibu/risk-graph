@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { href: '/console', label: 'Overview' },
+  { href: '/console/overview', label: 'Overview' },
   { href: '/console/graph', label: 'Graph' },
   { href: '/console/assets', label: 'Assets' },
   { href: '/console/risks', label: 'Risks' },
