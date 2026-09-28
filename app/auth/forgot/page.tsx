@@ -1,37 +1,26 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ForgotPasswordPage() {
   return (
-    <div className="space-y-6">
-      <div className="space-y-2 text-center">
-        <h1 className="text-3xl font-bold">Reset your password</h1>
-        <p className="text-muted-foreground">
-          Enter your email and we&apos;ll send you a reset link
-        </p>
-      </div>
-
-      <div className="space-y-4">
+    <Card>
+      <CardHeader className="text-center">
+        <CardTitle className="text-2xl">Reset your password</CardTitle>
+        <CardDescription>Enter your email and we&apos;ll send you a reset link</CardDescription>
+      </CardHeader>
+      <CardContent className="space-y-4">
         <div className="space-y-2">
-          <label htmlFor="email" className="text-sm font-medium">
-            Email
-          </label>
-          <input
-            id="email"
-            type="email"
-            placeholder="name@example.com"
-            className="w-full rounded-md border px-3 py-2"
-          />
+          <Label htmlFor="email">Email</Label>
+          <Input id="email" type="email" placeholder="name@example.com" />
         </div>
-
         <Button className="w-full">Send reset link</Button>
-      </div>
-
-      <div className="text-center text-sm">
-        <Link href="/auth/login" className="font-medium hover:underline">
-          Back to sign in
-        </Link>
-      </div>
-    </div>
+      </CardContent>
+      <CardFooter className="justify-center text-sm">
+        <Link href="/auth/login" className="font-medium hover:underline">Back to sign in</Link>
+      </CardFooter>
+    </Card>
   );
 }
