@@ -12,7 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - shadcn/ui component library integration
 - `components/app` skeleton: `AppHeader`, `AppFooter`, `AppLayout`
 - `components/console` skeleton: `ConsoleHeader`, `ConsoleSidebar`, `ConsoleLayout`
-- Standard open source project files
+- Standard open source project files (LICENSE, SECURITY, CONTRIBUTING, CODE_OF_CONDUCT)
+- Comprehensive project documentation
+- Detailed roadmap for security context graph development
+- Apache 2.0 license
 
 ## [0.1.0] - 2026-09-28
 

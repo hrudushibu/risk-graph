@@ -1,28 +1,51 @@
-# risk-graph
+# Risk Graph
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](./LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
 [![React](https://img.shields.io/badge/React-19-blue)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org)
 
-> Risk visualization and graph analysis tooling built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4.
+> **Open-source security graph connecting assets, identities, permissions, vulnerabilities, and exposures.**
 
-## Repository
+Risk Graph transforms isolated security findings into a unified relationship model. Instead of treating alerts as independent events, see how assets, identities, permissions, vulnerabilities, and cloud resources connect—and how those connections create actual security risk.
+
+## 🧩 The Problem
+
+Traditional security tools generate thousands of alerts, but they don't show you:
+
+- Which vulnerabilities are actually exploitable in *your* environment?
+- How an attacker could move from one compromised asset to another?
+- Which identities have dangerous permission combinations?
+- What's the blast radius if a specific resource is compromised?
+
+**Risk Graph answers these questions by modeling security as a graph.**
+
+## 🚀 Repository
 
 [https://github.com/hrudushibu/risk-graph](https://github.com/hrudushibu/risk-graph)
 
-## Tech Stack
+## ✨ Core Features (Planned)
 
-- [Next.js 16](https://nextjs.org) — React framework with App Router
-- [React 19](https://react.dev) — UI library
-- [TypeScript 5](https://www.typescriptlang.org) — Type safety
-- [Tailwind CSS 4](https://tailwindcss.com) — Utility-first styling
-- [shadcn/ui](https://ui.shadcn.com) — Component library
+- 🕸️ **Security Asset Graph** — Model environments as interconnected graphs
+- 👤 **Identity & Permission Relationships** — Map access patterns and privilege paths
+- 🐛 **Vulnerability Correlation** — Connect CVEs to affected assets and blast radius
+- 🌐 **Exposure Mapping** — Track attack surface and entry points
+- ☁️ **Cloud Resource Relationships** — Understand IAM, security groups, and dependencies
+- 🔍 **Attack-Path Discovery** — Query possible attack paths through the environment
+- 📊 **Graph-Based Queries** — Ask complex security questions across the entire environment
 
-## Getting Started
+## 🛠️ Tech Stack
+
+- **[Next.js 16](https://nextjs.org)** — Modern React framework
+- **[React 19](https://react.dev)** — UI library
+- **[TypeScript 5](https://www.typescriptlang.org)** — Type safety
+- **[Tailwind CSS 4](https://tailwindcss.com)** — Styling
+- **[shadcn/ui](https://ui.shadcn.com)** — UI components
+
+## 📦 Getting Started
 
 ```bash
-# Clone the repo
+# Clone the repository
 git clone https://github.com/hrudushibu/risk-graph.git
 cd risk-graph
 
@@ -32,40 +55,46 @@ npm install
 # Set up environment
 cp .env.example .env.local
 
-# Start the dev server
+# Start dev server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Visit [http://localhost:3000](http://localhost:3000) to access the UI.
 
-## Project Structure
+## 🚧 Project Status
 
-```
-app/                  # Next.js App Router pages
-components/
-  app/                # AppHeader, AppFooter, AppLayout
-  console/            # ConsoleHeader, ConsoleSidebar, ConsoleLayout
-  ui/                 # shadcn/ui primitives
-lib/                  # Shared utilities
-```
+**Early Development** — This project is in active initial development. The graph engine, data models, and visualization approach are being designed. Expect significant changes as the project evolves.
 
-## Scripts
+Current progress:
+- ✅ Project scaffolding and build configuration
+- ✅ Basic component structure
+- 🚧 Graph data model design
+- ⏳ Feature implementation (upcoming)
 
-| Command | Description |
-|---|---|
-| `npm run dev` | Start development server |
-| `npm run build` | Production build |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
+## 🗺️ Roadmap
 
-## Contributing
+See [ROADMAP.md](./ROADMAP.md) for detailed development plan.
 
-Contributions are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+## 🤝 Contributing
 
-## Security
+Contributions welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-To report a vulnerability, see [SECURITY.md](./SECURITY.md) or email [hrudushibu.tech@gmail.com](mailto:hrudushibu.tech@gmail.com).
+Early-stage contributions are especially valuable—help design the graph model and query interface.
 
-## License
+## 🔒 Security
+
+Report vulnerabilities to [hrudushibu.tech@gmail.com](mailto:hrudushibu.tech@gmail.com) or via [GitHub Security Advisory](https://github.com/hrudushibu/risk-graph/security/advisories/new).
+
+## 📬 Contact
+
+- **Email**: [hrudushibu.tech@gmail.com](mailto:hrudushibu.tech@gmail.com)
+- **Issues**: [GitHub Issues](https://github.com/hrudushibu/risk-graph/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/hrudushibu/risk-graph/discussions)
+
+## 📄 License
 
 Licensed under the [Apache License 2.0](./LICENSE).
+
+---
+
+**Built for security teams who think in graphs, not lists**
