@@ -4,7 +4,7 @@ import Link from 'next/link';
 export function AppHeader() {
   return (
     <header className="border-b">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-6 py-4 md:px-8">
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity w-fit">
           <Image
             src="/icons/app/icon.svg"
