@@ -9,30 +9,9 @@
 
 Risk Graph transforms isolated security findings into a unified relationship model. Instead of treating alerts as independent events, see how assets, identities, permissions, vulnerabilities, and cloud resources connect—and how those connections create actual security risk.
 
-## 🧩 The Problem
-
-Traditional security tools generate thousands of alerts, but they don't show you:
-
-- Which vulnerabilities are actually exploitable in *your* environment?
-- How an attacker could move from one compromised asset to another?
-- Which identities have dangerous permission combinations?
-- What's the blast radius if a specific resource is compromised?
-
-**Risk Graph answers these questions by modeling security as a graph.**
-
 ## 🚀 Repository
 
 [https://github.com/hrudushibu/risk-graph](https://github.com/hrudushibu/risk-graph)
-
-## ✨ Core Features (Planned)
-
-- 🕸️ **Security Asset Graph** — Model environments as interconnected graphs
-- 👤 **Identity & Permission Relationships** — Map access patterns and privilege paths
-- 🐛 **Vulnerability Correlation** — Connect CVEs to affected assets and blast radius
-- 🌐 **Exposure Mapping** — Track attack surface and entry points
-- ☁️ **Cloud Resource Relationships** — Understand IAM, security groups, and dependencies
-- 🔍 **Attack-Path Discovery** — Query possible attack paths through the environment
-- 📊 **Graph-Based Queries** — Ask complex security questions across the entire environment
 
 ## 🛠️ Tech Stack
 
